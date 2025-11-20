@@ -35,9 +35,9 @@ fun LoginScreen(
         Pola formularza — przechowywane w pamięci Compose przez remember,
         ponieważ to UI-state, nie stan aplikacyjny.
     */
-    var routerIp by remember { mutableStateOf("91.227.0.7:30071") }
-    var user by remember { mutableStateOf("admin") }
-    var pass by remember { mutableStateOf("@Wojtek12345") }
+    var routerIp by remember { mutableStateOf("") }
+    var user by remember { mutableStateOf("") }
+    var pass by remember { mutableStateOf("") }
     var passwordVisible by remember { mutableStateOf(false) }
 
     // stan aplikacyjny z ViewModel — (loading, verified, error)
